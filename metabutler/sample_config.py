@@ -3,9 +3,9 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "YOUR KEY HERE"
-    OWNER_ID = "YOUR ID HERE"  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "YOUR USERNAME HERE"
+    API_KEY = "1531906926:AAFq6V7GB5oSFpDwgMFShal5konb65vWqwY"
+    OWNER_ID = "1110419488"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "@SkitlessTechs"
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
@@ -16,9 +16,9 @@ class Config(object):
     URL = None
     # OPTIONAL
     GROUP_BLACKLIST = []
-    SUDO_USERS = []  # List of id's (not usernames) for users which have sudo access to the bot.
-    SUPPORT_USERS = []  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = []  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
+    SUDO_USERS = []  # List of id's (1471149038) for users which have sudo access to the bot.
+    SUPPORT_USERS = []  # List of id's (1454764415) for users which are allowed to gban, but can also be banned.
+    WHITELIST_USERS = []  # List of id's (1110419488) for users which WONT be banned/kicked by the bot.
     CERT_PATH = None
     PORT = 5000
     GBAN_LOGS = None #Channel ID here with -
@@ -31,7 +31,6 @@ class Config(object):
     CUSTOM_CMD = False # Set to ('/', '!') or whatever to enable it, like ALLOW_EXCL but with more custom handler!
     SPAMMERS = "" # Will not allow to interact with bot
     TEMPORARY_DATA = None # Temporary data for backup module, use int number
-
 
 class Production(Config):
     LOGGER = False
