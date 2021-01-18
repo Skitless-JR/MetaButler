@@ -162,7 +162,7 @@ def start(update, context):
             buttons = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))],
                 [InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/GroupManagerBotSupport")],
+                [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/mod_apks_st")],
                 [InlineKeyboardButton(text="Help❓", callback_data="help_back")]])
             update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name)), reply_markup=buttons, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
